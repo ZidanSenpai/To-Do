@@ -1,1 +1,9 @@
-import "./styles.css"; // or the correct relative path
+import "./styles.css";
+
+const projectButtons = document.querySelectorAll(".project-btn");
+
+projectButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        console.log("I was clicked");
+    });
+});

@@ -263,4 +263,26 @@ document.addEventListener("DOMContentLoaded", () => {
     renderProjects();      // Populate project buttons (Home, College, etc.)
     renderTodos();         // Render todos for the current project
     document.querySelector(".project-name").textContent = currentProject;
+
+    const deleteProjectBtn = document.getElementById("deleteProject");
+
+    deleteProjectBtn.addEventListener("click", () => {
+        if (Object.keys(projects).length <= 1) {
+            alert("You must have at least one project.");
+            return;
+        }
+
+        const confirmDelete = confirm(`Are you sure you want to delete "${currentProject}"?`);
+        if (!confirmDelete) return;
+
+        delete projects[currentProject];
+
+        // Set fallback to first remaining project
+        currentProject = Object.keys(projects)[0];
+        document.querySelector(".project-name").textContent = currentProject;
+
+        renderProjects();
+        renderTodos();
+    });
+
 });

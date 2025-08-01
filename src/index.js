@@ -82,6 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
     todoForm.addEventListener("submit", (e) => {
         e.preventDefault();
 
+        
         const titleInput = document.getElementById("title");
         const descriptionInput = document.getElementById("description");
         const dueDateInput = document.getElementById("dueDate");
@@ -90,7 +91,17 @@ document.addEventListener("DOMContentLoaded", () => {
         const description = descriptionInput.value.trim();
         const dueDate = dueDateInput.value;
         const priority = prioritySelect.value;
-
+        
+        const newTodo = {
+            title: titleInput.value,
+            description: descriptionInput.value,
+            dueDate: dueDateInput.value,
+            priority: prioritySelect.value,
+        };
+        if (!projects[currentProject]) {
+            projects[currentProject] = [];
+        }
+        projects[currentProject].push(newTodo);
         if (!title) return;
 
         const todo = document.createElement("div");

@@ -9,6 +9,10 @@
     background: #e7e7e7;
     height: 100vh;
 }
+.main-content{
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+}
 .logo{
     font-size: 4vmin;
     margin-top: 10%;
@@ -51,4 +55,79 @@ button:hover {
 }
 button:active {
     background-color: #DC366E ;
+}
+.account-logo{
+    vertical-align: middle; /* Aligns image vertically with surrounding text */
+    width: 50px; /* Sets the width of the avatar */
+    height: 50px; /* Sets the height of the avatar */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover
+}
+.header{
+    display: flex;
+    align-items: center;
+    background: white;
+}
+.header-text{
+    padding-left: 50px;
+    font-weight: 750;
+}
+/* From Uiverse.io by joe-watson-sbf */ 
+.search {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: auto; /* pushes search to the right */
+  margin-right: 2rem;
+}
+
+.search__input {
+  font-family: inherit;
+  font-size: 1rem;
+  background-color: #f4f2f2;
+  border: none;
+  color: #646464;
+  padding: 0.7rem 1rem;
+  border-radius: 30px;
+  width: 12em;
+  transition: all ease-in-out 0.5s;
+}
+
+.search__input:hover,
+.search__input:focus {
+  box-shadow: 0 0 1em #00000013;
+  outline: none;
+  background-color: #f0eeee;
+}
+
+.search__input::placeholder {
+  font-weight: 100;
+  color: #ccc;
+}
+
+.search__button {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: none;
+  background-color: #f4f2f2;
+  transition: background-color 0.3s ease;
+}
+
+
+.search__button:hover {
+  cursor: pointer;
+  background-color: #e0e0e0;
+}
+
+.search__icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #b4b4b4;
+}
+.account{
+    margin-right: 50px;
 }

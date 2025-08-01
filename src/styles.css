@@ -1,83 +1,101 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
-.container{
-    display: grid;
-    grid-template-columns: 1fr 7fr;
-    background: #e7e7e7;
-    height: 100vh;
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  background: #e7e7e7;
+  height: 100vh;
 }
-.main-content{
-    display: grid;
-    grid-template-rows: 1fr 9fr;
+
+.main-content {
+  display: grid;
+  grid-template-rows: 1fr 9fr;
 }
-.logo{
-    font-size: 4vmin;
-    margin-top: 10%;
-    margin-bottom: 30%;
+
+.logo {
+  font-size: 4vmin;
+  margin-top: 10%;
+  margin-bottom: 30%;
 }
-.sidebar-content{
-    background: #363636 ;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    padding-left: 10%;
-    height: 100vh;
-    color: white;
+
+.sidebar-content {
+  background: #363636;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding-left: 10%;
+  height: 100vh;
+  color: white;
 }
-.project{
-    padding-bottom: 10%;
+
+.project {
+  padding-bottom: 10%;
 }
+
 button {
-    border: 2px solid #CD537C;
-    background-color: #CD537C;
-    border-radius: 0.9em;
-    cursor: pointer;
-    padding: 0.8em 1.2em 0.8em 1em;
-    transition: all ease-in-out 0.1s;
-    font-size: 16px;
+  border: 2px solid #CD537C;
+  background-color: #CD537C;
+  border-radius: 0.9em;
+  cursor: pointer;
+  padding: 0.8em 1.2em 0.8em 1em;
+  transition: all ease-in-out 0.1s;
+  font-size: 16px;
 }
-.new-project{
-    padding-bottom: 30%;
+
+.new-project {
+  padding-bottom: 30%;
 }
+
 button span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #000;
-    font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-weight: 600;
 }
 
 button:hover {
-    background-color: #EA185F;
+  background-color: #DC366E;
 }
+
 button:active {
-    background-color: #DC366E ;
+  background-color: #EA185F;
 }
-.account-logo{
-    vertical-align: middle; /* Aligns image vertically with surrounding text */
-    width: 50px; /* Sets the width of the avatar */
-    height: 50px; /* Sets the height of the avatar */
-    border-radius: 50%; /* Makes the image circular */
-    object-fit: cover
+
+.account-logo {
+  vertical-align: middle;
+  /* Aligns image vertically with surrounding text */
+  width: 50px;
+  /* Sets the width of the avatar */
+  height: 50px;
+  /* Sets the height of the avatar */
+  border-radius: 50%;
+  /* Makes the image circular */
+  object-fit: cover
 }
-.header{
-    display: flex;
-    align-items: center;
-    background: white;
+
+.header {
+  display: flex;
+  align-items: center;
+  background: white;
 }
-.header-text{
-    padding-left: 50px;
-    font-weight: 750;
+
+.header-text {
+  padding-left: 50px;
+  font-weight: 750;
 }
-/* From Uiverse.io by joe-watson-sbf */ 
+
+/* From Uiverse.io by joe-watson-sbf */
 .search {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  margin-left: auto; /* pushes search to the right */
+  margin-left: auto;
+  /* pushes search to the right */
   margin-right: 2rem;
 }
 
@@ -128,51 +146,69 @@ button:active {
   height: 1.5rem;
   fill: #b4b4b4;
 }
-.account{
-    margin-right: 50px;
+
+.account {
+  margin-right: 50px;
 }
-.main-content-container{
-    margin: 5% 10%;
-    background: white;
-    border-radius: 22px;
-    box-shadow: 0px 0px 15px 12px rgba(0, 0, 0, 0.1) ; 
+
+.main-content-container {
+  margin: 5% 10%;
+  background: white;
+  border-radius: 22px;
+  box-shadow: 0px 0px 15px 12px rgba(0, 0, 0, 0.1);
 }
-.new-td{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-top: 50px;
+
+.new-td {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 50px;
 }
-.addtd{
-    margin-right: 50px;
-    background: #363636;
-    color: white;
-    border-color: #363636;
+
+.addtd {
+  margin-right: 50px;
+  background: #363636;
+  color: white;
+  border-color: #363636;
 }
-.addtd:hover{
-    background: #494949;
+
+.addtd:hover {
+  background: #494949;
 }
-.addtd:active{
-    background: #797979;
+
+.addtd:active {
+  background: #797979;
 }
+
 .todos {
   padding: 1rem;
   margin-left: 50px;
   margin-top: 50px;
+  height: 45vmin;
 }
 
 .todo {
+  position: relative;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
   margin-bottom: 1rem;
-  font-size: 1.2rem; /* Increase font size */
 }
-
-.checklist {
+.info{
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 10px;
 }
-
+.checklist {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.left {
+  flex: 1;
+}
 /* Customize checkbox appearance */
 .checkbox {
   appearance: none;
@@ -180,7 +216,8 @@ button:active {
   width: 1.5rem;
   height: 1.5rem;
   border: 2px solid #888;
-  border-radius: 50%; /* Make it round */
+  border-radius: 50%;
+  /* Make it round */
   position: relative;
   cursor: pointer;
   transition: background-color 0.2s ease, border-color 0.2s ease;
@@ -193,21 +230,22 @@ button:active {
 }
 
 /* Strikethrough label when checked */
-.checkbox:checked + .label {
+.checkbox:checked+.label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Label styling */
 .label {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
   cursor: pointer;
   transition: color 0.3s ease;
 }
+
 .edit {
-  margin-left: 75.5%;
-  display: flex;
-  gap: 0.5rem;
+  margin-left: 1rem;
+  flex-shrink: 0;
 }
 
 .icon-button {
@@ -222,10 +260,15 @@ button:active {
   border-radius: 6px;
 }
 
-.icon-button:hover {
-  background-color: #e0e0e0;
+.icon-button .icon {
+  width: 20px;
+  height: 20px;
+  color: #888;
+  transition: color 0.2s ease-in-out;
 }
-
+.icon-button:hover .icon {
+  color: red;
+}
 .icon {
   width: 1.3rem;
   height: 1.3rem;
@@ -241,16 +284,142 @@ button:active {
   fill: #e74c3c;
 }
 
-.project-name{
-    margin-left: 65px;
+.project-name {
+  margin-left: 65px;
 }
-.project-btn{
-    border: none;
-    background: #363636;
-    color: white;
-    padding: 0;
-    font-size: 1.5rem;
+
+.project-btn {
+  border: none;
+  background: #363636;
+  color: white;
+  padding: 0;
+  font-size: 1.5rem;
 }
-.project-btn:hover{
-    background: #363636;
+
+.project-btn:hover {
+  background: #363636;
+}
+
+.delete {
+  margin-left: 50px;
+}
+
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.todo-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 300px;
+}
+/* Modal box */
+.modal {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 350px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.modal label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+.modal input,
+.modal textarea,
+.modal select {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.modal textarea {
+  resize: vertical;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.submit-btn {
+  background-color: #CD537C;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#cancelBtn {
+  background: transparent;
+  border: 1px solid #CD537C;
+  color: #CD537C;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Priority color options */
+#priority option.low {
+  color: green;
+}
+
+#priority option.medium {
+  color: orange;
+}
+
+#priority option.high {
+  color: red;
+}
+.meta {
+  margin-top: 0.5rem;
+  color: #666;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+}
+
+.description {
+  font-style: italic;
+}
+
+.due-date {
+  color: #CD537C;
+  font-weight: 600;
+}
+.low { color: green; }
+.medium { color: orange; }
+.high { color: red; }
+
+.default-todo{
+  color: orange;
 }

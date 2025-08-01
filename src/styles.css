@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    height: 100vh;
+}
+.sidebar{
+    background: #363636 ;
+}

@@ -37,8 +37,8 @@
 }
 
 button {
-  border: 2px solid #CD537C;
-  background-color: #CD537C;
+  border: 2px solid #cd537c;
+  background-color: #cd537c;
   border-radius: 0.9em;
   cursor: pointer;
   padding: 0.8em 1.2em 0.8em 1em;
@@ -59,11 +59,11 @@ button span {
 }
 
 button:hover {
-  background-color: #DC366E;
+  background-color: #dc366e;
 }
 
 button:active {
-  background-color: #EA185F;
+  background-color: #ea185f;
 }
 
 .account-logo {
@@ -75,7 +75,7 @@ button:active {
   /* Sets the height of the avatar */
   border-radius: 50%;
   /* Makes the image circular */
-  object-fit: cover
+  object-fit: cover;
 }
 
 .header {
@@ -134,7 +134,6 @@ button:active {
   background-color: #f4f2f2;
   transition: background-color 0.3s ease;
 }
-
 
 .search__button:hover {
   cursor: pointer;
@@ -196,7 +195,7 @@ button:active {
   border-radius: 8px;
   margin-bottom: 1rem;
 }
-.info{
+.info {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -225,12 +224,12 @@ button:active {
 
 /* Checked state: filled circle */
 .checkbox:checked {
-  background-color: #CD537C;
-  border-color: #CD537C;
+  background-color: #cd537c;
+  border-color: #cd537c;
 }
 
 /* Strikethrough label when checked */
-.checkbox:checked+.label {
+.checkbox:checked + .label {
   text-decoration: line-through;
   color: #888;
 }
@@ -369,7 +368,7 @@ button:active {
 }
 
 .submit-btn {
-  background-color: #CD537C;
+  background-color: #cd537c;
   color: white;
   border: none;
   padding: 0.6rem 1rem;
@@ -379,8 +378,8 @@ button:active {
 
 #cancelBtn {
   background: transparent;
-  border: 1px solid #CD537C;
-  color: #CD537C;
+  border: 1px solid #cd537c;
+  color: #cd537c;
   padding: 0.6rem 1rem;
   border-radius: 6px;
   cursor: pointer;
@@ -413,13 +412,19 @@ button:active {
 }
 
 .due-date {
-  color: #CD537C;
+  color: #cd537c;
   font-weight: 600;
 }
-.low { color: green; }
-.medium { color: orange; }
-.high { color: red; }
+.low {
+  color: green;
+}
+.medium {
+  color: orange;
+}
+.high {
+  color: red;
+}
 
-.default-todo{
+.default-todo {
   color: orange;
 }
